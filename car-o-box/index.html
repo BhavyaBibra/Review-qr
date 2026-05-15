@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+
+  <title>Opening Google Reviews...</title>
+
+  <!-- Redirect Fallback -->
+  <meta http-equiv="refresh"
+        content="0; url=PASTE_GOOGLE_REVIEW_URL_HERE" />
+
+  <script>
+    // Instant redirect
+    window.location.replace(
+      "PASTE_GOOGLE_REVIEW_URL_HERE"
+    );
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ffffff, #f5f5f5);
+      overflow: hidden;
+    }
+
+    .loader {
+      width: 70px;
+      height: 70px;
+      border: 7px solid #e5e5e5;
+      border-top: 7px solid #000000;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-bottom: 30px;
+    }
+
+    @keyframes spin {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #111;
+      margin-bottom: 12px;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #666;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .google {
+      margin-top: 40px;
+      font-size: 16px;
+      color: #888;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="loader"></div>
+
+  <h1>Opening Google Reviews...</h1>
+
+  <p>Please wait while we redirect you.</p>
+
+  <div class="google">
+    Powered by Google Reviews
+  </div>
+
+</body>
+
+</html>
